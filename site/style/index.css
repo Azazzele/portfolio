@@ -1,0 +1,252 @@
+@import 'active.css';
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(../fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(../fonts/Gilroy-Medium.ttf);
+}
+
+:root{
+    --not_active:#828282;
+    --actiev:#070707;
+}
+
+body{
+    width: 100vw;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: initial;
+}
+
+h1{
+    font-family: 'Gilroy-Bold', monospace;
+    color: var(--actiev);
+}
+.header{
+    max-width: 100%;
+    max-height: 1080px;
+    min-height: auto;
+    min-width: 100vw;
+    margin: 0 auto 8em auto;
+
+}
+.header nav{
+    width: 100%;
+    min-width: 100%;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header  nav ul {
+    display: flex;
+    width: 1260px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Gilroy-Bold',monospace;
+
+    
+
+}
+.header  nav  .link{
+    color: var(--not_active);
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+.header  hr{
+    width: 950px;
+    margin: 0 auto;
+}
+.title_header{
+    display: flex;
+    justify-content: space-between;
+    margin: 29px auto;
+    width: 942px;
+}
+
+.logo{
+    width: 125px;
+    font-size: 47.3392px;
+}
+.logo_ach{
+    width: 155px;
+    font-size: 18px;
+    align-self:center;
+}
+
+.logo_lang{
+    transform: rotate(-90deg);
+    width: 65px;
+    font-size: 16px;
+    align-self:center;
+    justify-self: flex-end;
+    color: var(--not_active);   
+}
+
+.img_title{
+
+    text-align: center;
+    object-fit: cover;
+}
+.imae_tirtle img{
+    max-width: 357px;
+    max-height: 478px;
+    
+}
+.container{
+    height: 506px;
+    width: 100%;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 9em 0;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #F6F6F6;
+    font-size: 18px;
+
+}
+.container div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 458px;
+    height: 218px;
+    justify-content: center;
+    align-items: center;
+    line-height: 21px;
+}
+.container h1,
+.container p{
+    font-family:'Gilroy-Medium';
+    width: 440px;
+    color: var(--actiev);
+    
+}
+.container h1{
+    flex:  0 0 100%;
+    margin-bottom: 20px;
+}
+.container p{
+    flex:  0 0 100%;
+}
+.container_skills{
+    width: 100%;
+    margin:  5em auto;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.container_skills p{
+    font-size: 18px;
+    margin: 4em;
+    color: var(--actiev);
+    font-family: 'Gilroy-Medium';
+}
+.item_skills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1600px; 
+    min-width: 957px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 3em 0;
+
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+
+}
+.skills img:first-of-line{
+    justify-content: center;
+    display: flex;
+    width: 96px;
+    margin:  0 auto;
+    
+}
+.skills h5{
+    color: var(--not_active);
+    text-align: center;
+    width: 100px;
+    margin: 10px 0;
+    font-size: 15px;
+}
+.container_portfolio{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:stretch;
+    background-color:#F6F6F6;
+}
+.container_portfolio h1{
+    margin: 2em;
+}
+.portfolio_item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 4em auto;
+}
+.portfolio_item img{
+    display: block;
+    
+
+}
+.portfolio_item p{
+    font-family: 'Gilroy-Medium', monospace;
+    font-size: 18px;
+    margin-top: 3em;
+    line-height: 15px;
+    text-decoration: solid var(--actiev);
+}
+.container__footer{
+    background-color: #fff;
+
+}
+.container__footer .img_footer{
+    width: 100%;
+    margin: 2em 0;
+}
+.container__footer img{
+    width: 320px;
+    text-align: center;
+}
+.container__footer .text_ohter_footer{
+    width: 100%;
+    text-align: center;
+}
+.container__footer  .text_other{
+    width: 243px;
+    text-align: center;
+    color: var(--not_active);
+    margin: 0 auto;
+}
+.link_item > a:hover{
+    color:var(--actiev);
+    transition: .4s;
+}

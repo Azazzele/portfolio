@@ -1,0 +1,7 @@
+/* активные блоки */
+.active{
+    color: var(--actiev ) !important;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
